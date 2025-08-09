@@ -136,7 +136,11 @@ EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-password
 ```
 
+#### 📚 **Resources:**
+- 🎥 [Node.js Installation Guide](https://nodejs.org/)
+- 🛠️ [Postman for API Testing](https://www.postman.com/)
 
+</details>
 
 
 
@@ -232,3 +236,41 @@ EMAIL_PASS=your-app-password
 *Made with ❤️ by [Kush Kumar](https://github.com/kushkumarkashyap7280) | Follow the journey on [GitHub](https://github.com/kushkumarkashyap7280)*
 
 </div>
+
+
+# 📅 Day-wise Learning Journey
+
+### 🎯 **Day 1: Backend Fundamentals & MERN Stack Introduction**
+
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### 🌐 **Core Topics Covered:**
+- ✅ **Frontend vs Backend Communication** - How they work together
+- ✅ **APIs Fundamentals** - What they are and why they're essential  
+- ✅ **HTTP Status Codes** - The language of APIs (200, 404, 500, etc.)
+- ✅ **Node.js Runtime Environment** - JavaScript on the server-side
+- ✅ **MERN Stack Architecture** - How all components integrate
+- ✅ **Backend Core Responsibilities** - Data, Files, and External APIs
+
+#### 🛠️ **Hands-on Practice:**
+- 🚀 **Install Node.js** and set up development environment
+- 💻 **Create your first Express server** 
+- 📡 **Understand Request & Response objects** in detail
+- 📁 **Learn professional folder structure** for backend projects
+
+#### 🎯 **Key Takeaways:**
+- Understand how frontend and backend communicate through APIs
+- Know the most important HTTP status codes and when to use them
+- Set up a basic Node.js server that responds with JSON
+- Grasp the three main things backends handle: data, files, and external APIs
+
+#### 📚 **Resources:**
+- 📖 [**Day 1 Complete Guide**](./day_001/README.md) - Detailed tutorial with examples
+- 🎥 [Node.js Installation Guide](https://nodejs.org/)
+- 🛠️ [Postman for API Testing](https://www.postman.com/)
+- 📚 [Express.js Documentation](https://expressjs.com/)
+- 🔍 [HTTP Status Codes Reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+</details>
+
