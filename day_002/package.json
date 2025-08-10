@@ -1,0 +1,21 @@
+{
+  "name": "just_to_overview",
+  "version": "1.0.0",
+  "description": "this is just for overview how backend and frontend works",
+  "keywords": [
+    "overview"
+  ],
+  "license": "ISC",
+  "author": "kush kumar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
+}

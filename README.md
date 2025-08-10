@@ -274,3 +274,84 @@ EMAIL_PASS=your-app-password
 
 </details>
 
+### 🎯 **Day 2: Express Server & Environment Setup**
+
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### ⚙️ **Core Topics Covered:**
+- ✅ **Express.js Server** – Create routes like `"/"` and `"/about"`
+- ✅ **Request & Response** – Inspect `req` and `res` objects in detail
+- ✅ **Nodemon** – Auto-restart server during development
+- ✅ **Environment Variables** – Load `.env` with `dotenv`
+- ✅ **ES Modules vs CommonJS** – Using `"type": "module"` and `import` syntax
+
+#### 🛠️ **Project Setup & Scripts:**
+```json
+{
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "dotenv": "^17.2.1"
+  }
+}
+```
+
+#### 🔐 **Environment File (.env):**
+```env
+PORT=YOUR PORT
+```
+
+#### 🚀 **Quick Start (Day 2 app):**
+```bash
+cd day_002
+npm install
+npm run dev   # auto-restart with nodemon
+# or
+npm start     # plain node
+```
+
+#### 🧭 **Routes Preview:**
+- `GET /` → "this is our first basic fullstack in mern"
+- `GET /about` → `<h1>about page</h1>`
+
+#### 📚 **Full Guide:**
+- Read the complete tutorial: [`day_002/README.md`](./day_002/README.md)
+
+
+
+## ⚠️ Important Git Precautions
+
+### Always Use .gitignore for Node.js Projects
+
+**Critical**: Before committing any Node.js project to Git, always create a `.gitignore` file in your project root:
+
+```gitignore
+node_modules
+.env
+dist/
+build/
+*.log
+.DS_Store
+```
+
+### Why This Matters:
+- **`node_modules`** contains thousands of dependency files that should never be committed
+- These files are large (often 100MB+) and cause repository bloat
+- Dependencies can be regenerated with `npm install`
+- Prevents merge conflicts and keeps repository clean
+- **`.env`** files contain sensitive data like API keys
+
+### Best Practice Workflow:
+1. **First step**: Create `.gitignore` file
+2. Add `node_modules` to `.gitignore`
+3. Then run `git add .` and commit
+4. This prevents accidental commits of large dependency folders
+
+**Remember**: This precaution should be taken in **every single Node.js project** you create!
+</details>
