@@ -259,37 +259,7 @@ pie showData
 
 ---
 
-## 🚀 Next Steps & Improvements
 
-### 🛠️ E-Commerce Enhancements
-
-```mermaid
-gantt
-    title E-Commerce Development Roadmap
-    dateFormat  YYYY-MM-DD
-    section Core Features
-    User Authentication     :done,    des1, 2024-01-01, 14d
-    Product Management      :done,    des2, 2024-01-15, 21d
-    Shopping Cart           :active,  des3, 2024-02-05, 14d
-    Checkout Process        :          des4, after des3, 14d
-    
-    section Advanced Features
-    Payment Integration     :          des5, after des4, 21d
-    Order Tracking          :          des6, after des5, 14d
-    Review System           :          des7, after des6, 7d
-```
-
-### 📝 TODO App Improvements
-
-| Feature | Priority | Status |
-|---------|----------|--------|
-| Due Dates | High | ⏳ Pending |
-| Priority Levels | Medium | ⏳ Pending |
-| Tags & Categories | Medium | ⏳ Pending |
-| Search Functionality | High | ⏳ Pending |
-| Dark Mode | Low | ⏳ Pending |
-
----
 
 ## 🧪 Example Usage
 
