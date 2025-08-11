@@ -302,6 +302,8 @@ build/
 
 # 📅 Day-wise Learning Journey
 
+---
+
 ### 🎯 **Day 1: Backend Fundamentals & MERN Stack Introduction**
 
 <details>
@@ -422,4 +424,37 @@ cd frontend && npm run dev
 - 📚 [Express CORS Middleware](https://expressjs.com/en/resources/middleware/cors.html)
 - 🔍 [CORS Best Practices](https://www.npmjs.com/package/cors#enabling-cors-pre-flight)
 </details>
+
+
+### 🎯 **Day 4: MongoDB Data Modeling with Mongoose**
+
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### 🌐 **Core Topics Covered:**
+- ✅ **MongoDB Data Modeling** - Designing efficient database schemas
+- ✅ **Mongoose ODM** - Working with Mongoose for MongoDB
+- ✅ **Schema Design** - Structuring documents and relationships
+- ✅ **Data Validation** - Enforcing data integrity
+- ✅ **References & Population** - Managing relationships between collections
+
+#### 🛠️ **Hands-on Practice:**
+- 🛒 **E-commerce Models** - User, Product, Order, and more
+- ✅ **TODO App Models** - Task management with nested documents
+- 🔄 **Data Relationships** - One-to-Many, Many-to-Many patterns
+- 🧠 **MongoDB Best Practices** - Indexing, performance, and more
+
+#### 🎯 **Key Takeaways:**
+- Design effective MongoDB schemas for real-world applications
+- Understand the difference between embedding and referencing
+- Implement data validation at the schema level
+- Work with complex data relationships in MongoDB
+
+#### 📚 **Resources:**
+- 📖 [**Day 4 Complete Guide**](./day_004/README.md) - Detailed tutorial with examples
+- 🐘 [MongoDB Schema Design](https://www.mongodb.com/docs/manual/core/data-modeling-introduction/)
+- 🔧 [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)
+- 🎨 [View Data Models on Eraser.io](https://app.eraser.io/workspace/M8gq6HYVg8vA2ttiP7UU)
+</details>
+
 
