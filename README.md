@@ -457,4 +457,66 @@ cd frontend && npm run dev
 - 🎨 [View Data Models on Eraser.io](https://app.eraser.io/workspace/M8gq6HYVg8vA2ttiP7UU)
 </details>
 
+### 🎯 **Day 5: Professional Project Structure & Configuration**
+
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### 🌐 **Core Topics Covered:**
+- ✅ **Project Architecture** - Professional folder structure for MERN apps
+- ✅ **Environment Configuration** - Managing different environments (dev, prod, test)
+- ✅ **Package Management** - Dependencies and devDependencies
+- ✅ **Code Quality** - Prettier and ESLint setup
+- ✅ **Git Best Practices** - .gitignore and version control workflow
+
+#### 🛠️ **Hands-on Practice:**
+- 🏗️ **Project Scaffolding** - Setting up the base structure
+- ⚙️ **Configuration Files** - Environment variables and settings
+- 🔍 **Linting & Formatting** - Consistent code style
+- 🚀 **Scripts** - Development and production build scripts
+
+#### 🎯 **Key Takeaways:**
+- Understand the importance of project structure
+- Configure environment-specific settings
+- Set up code quality tools
+- Implement Git best practices
+
+#### 📚 **Resources:**
+- 📖 [**Day 5 Complete Guide**](./day_005/README.md) - Detailed tutorial with examples
+- 🏗️ [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
+- 🔧 [Prettier Configuration](https://prettier.io/docs/en/configuration.html)
+- 🛠️ [ESLint Configuration](https://eslint.org/docs/user-guide/configuring/)
+</details>
+
+### 🎯 **Day 6: Professional MongoDB Connection**
+
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### 🌐 **Core Topics Covered:**
+- ✅ **MongoDB Atlas** - Cloud database setup
+- ✅ **Connection Management** - Pooling and optimization
+- ✅ **Error Handling** - Robust connection error management
+- ✅ **Environment Configuration** - Secure credential management
+- ✅ **Best Practices** - Security and performance optimization
+
+#### 🛠️ **Hands-on Practice:**
+- ☁️ **MongoDB Atlas** - Setting up cloud database
+- 🔌 **Connection Pooling** - Managing database connections
+- 🛡️ **Security** - Implementing secure connections
+- 🔄 **Reconnection Logic** - Handling connection drops
+
+#### 🎯 **Key Takeaways:**
+- Set up and configure MongoDB Atlas
+- Implement efficient connection pooling
+- Handle database connection errors gracefully
+- Secure database credentials
+
+#### 📚 **Resources:**
+- 📖 [**Day 6 Complete Guide**](./day_006/README.md) - Detailed tutorial with examples
+- ☁️ [MongoDB Atlas Documentation](https://www.mongodb.com/cloud/atlas/register)
+- 🔌 [Mongoose Connection Docs](https://mongoosejs.com/docs/connections.html)
+- 🛡️ [MongoDB Security Checklist](https://www.mongodb.com/security)
+</details>
+
 
