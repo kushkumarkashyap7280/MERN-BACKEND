@@ -519,4 +519,36 @@ cd frontend && npm run dev
 - 🛡️ [MongoDB Security Checklist](https://www.mongodb.com/security)
 </details>
 
+### 🎯 **Day 7: Advanced Express Middleware & Request Processing**
 
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### 🌐 **Core Topics Covered:**
+- ✅ **Middleware Architecture** - Understanding the request/response cycle
+- ✅ **Request Parsing** - JSON and URL-encoded data handling
+- ✅ **Static File Serving** - Efficient asset delivery
+- ✅ **Cookie Management** - Secure cookie parsing
+- ✅ **CORS Configuration** - Cross-origin resource sharing (see Day 3 for details)
+
+#### 🛠️ **Hands-on Practice:**
+- 🔄 **Middleware Pipeline** - Building an efficient request processing flow
+- 📦 **Body Parsing** - Handling different content types
+- 📁 **File Serving** - Setting up static file directories
+- 🍪 **Cookie Management** - Working with cookies in Express
+- 🛡️ **Security Headers** - Implementing secure defaults
+
+#### 🎯 **Key Takeaways:**
+- Master the Express middleware system
+- Handle different types of request data
+- Serve static files efficiently
+- Implement secure cookie handling
+- Understand middleware execution order
+
+#### 📚 **Resources:**
+- 📖 [**Day 7 Complete Guide**](./day_007/README.md) - Detailed tutorial with examples
+- 🔗 [Express Middleware Guide](https://expressjs.com/en/guide/using-middleware.html)
+- 📦 [cookie-parser Documentation](https://www.npmjs.com/package/cookie-parser)
+- 🛡️ [Helmet.js Security Headers](https://helmetjs.github.io/)
+- 🔄 [Mermaid.js for Diagrams](https://mermaid-js.github.io/mermaid/)
+</details>

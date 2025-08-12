@@ -1,0 +1,48 @@
+# Node modules
+node_modules
+
+# Build outputs
+build
+dist
+public/build
+public/dist
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.sample
+.env.local
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage
+
+# Temporary files
+tmp
+temp
+
+# Package lock files (optional, if you don't want Prettier to check them)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Database dumps or data files
+*.sql
+*.sqlite
+*.db
+
+# Client-side build outputs
+client/node_modules
+client/build
+client/dist
+
+# Server-side build outputs
+server/node_modules
+server/build
+server/dist
