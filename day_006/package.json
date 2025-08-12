@@ -1,0 +1,29 @@
+{
+  "name": "general-backend-project",
+  "version": "1.0.0",
+  "description": "this is all in one single project to  covered  all mern backend topics ",
+  "keywords": [
+    "mern",
+    "backend"
+  ],
+  "license": "ISC",
+  "author": "kush kumar",
+  "type": "module",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1"
+  }
+}
