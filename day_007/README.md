@@ -147,7 +147,7 @@ graph LR
 
 ## 🌐 HTTP Status Codes Reference
 
-<details>
+
 <summary><strong>📖 Standard HTTP Status Codes</strong></summary>
 
 ### 1xx: Informational
@@ -218,7 +218,7 @@ graph LR
 - [MDN HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [HTTP Status Codes (IETF)](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)
 - [REST API Tutorial - Status Codes](https://restfulapi.net/http-status-codes/)
-</details>
+
 
 
 ## ⚙️ Environment Configuration (`.env.sample`)
