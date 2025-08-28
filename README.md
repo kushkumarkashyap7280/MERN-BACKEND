@@ -612,3 +612,41 @@ cd frontend && npm run dev
 - 📊 [Mongoose Middleware](https://mongoosejs.com/docs/middleware.html)
 - 🔄 [Refresh Token Best Practices](https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/)
 </details>
+
+### 🎯 **Day 9: Cloud Storage Integration & File Upload System**
+
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### 🌐 **Core Topics Covered:**
+
+- ✅ **File Upload System** - Securely handle user-uploaded files, images, and media
+- ✅ **Cloudinary Integration** - Store and manage files in the cloud
+- ✅ **Multer Middleware** - Handle multipart/form-data for file uploads
+- ✅ **Node.js Core Modules** - Deep dive into fs, path, url, crypto, and http modules
+- ✅ **Content Organization** - Structure for managing different file types
+
+#### 🛠️ **Hands-on Practice:**
+
+- 📤 **Multer Configuration** - Setting up file upload middleware
+- ☁️ **Cloudinary Setup** - Configuring cloud storage integration
+- 🖼️ **Image Processing** - Managing uploaded images
+- 📹 **Video Uploads** - Handling video content
+- 📂 **File Type Detection** - Determining appropriate storage based on file type
+
+#### 🎯 **Key Takeaways:**
+
+- Implement a robust file upload system
+- Integrate with cloud storage providers
+- Securely process and store user-uploaded files
+- Handle different file types appropriately
+- Master Node.js core modules for file operations
+
+#### 📚 **Resources:**
+
+- 📖 [**Day 9 Complete Guide**](./day_009/README.md) - Detailed tutorial with examples
+- 📑 [**Node.js Modules Documentation**](./day_009/docs/node-modules/README.md) - Comprehensive guides for core modules
+- ☁️ [Cloudinary Documentation](https://cloudinary.com/documentation/node_integration)
+- 📤 [Multer Documentation](https://github.com/expressjs/multer)
+- 🛡️ [File Upload Security Best Practices](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)
+</details>
