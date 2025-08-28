@@ -85,18 +85,18 @@ console.log(endpointUrl.href); // https://api.example.com/v1/users/profile
 These utilities convert between file paths and `file://` URLs, which is especially useful in ES Modules:
 
 ```javascript
-import { fileURLToPath, pathToFileURL } from 'url';
-import path from 'path';
+import { fileURLToPath, pathToFileURL } from "url";
+import path from "path";
 
 // Converting file:// URL to a path
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-console.log('Current file:', __filename);
-console.log('Current directory:', __dirname);
+console.log("Current file:", __filename);
+console.log("Current directory:", __dirname);
 
 // Converting a path to a file:// URL
-const fileUrl = pathToFileURL(path.join(__dirname, 'data.json'));
+const fileUrl = pathToFileURL(path.join(__dirname, "data.json"));
 console.log(fileUrl.href); // file:///path/to/your/directory/data.json
 ```
 
@@ -104,26 +104,26 @@ console.log(fileUrl.href); // file:///path/to/your/directory/data.json
 
 ### URL Methods
 
-| Method          | Description                                              |
-|-----------------|----------------------------------------------------------|
-| `toString()`    | Returns the complete URL as a string                     |
-| `toJSON()`      | Returns the complete URL as a string (for JSON.stringify)|
+| Method       | Description                                               |
+| ------------ | --------------------------------------------------------- |
+| `toString()` | Returns the complete URL as a string                      |
+| `toJSON()`   | Returns the complete URL as a string (for JSON.stringify) |
 
 ### URLSearchParams Methods
 
-| Method            | Description                                        |
-|-------------------|----------------------------------------------------|
-| `append(name, value)` | Appends a new name-value pair                 |
-| `delete(name)`    | Deletes all pairs with the specified name          |
-| `get(name)`       | Returns the first value associated with the name   |
-| `getAll(name)`    | Returns all values associated with the name        |
-| `has(name)`       | Returns boolean indicating if the name exists      |
-| `set(name, value)`| Sets the value associated with the name            |
-| `sort()`          | Sorts all key-value pairs by their names           |
-| `entries()`       | Returns an iterator for all key-value pairs        |
-| `keys()`          | Returns an iterator for all keys                   |
-| `values()`        | Returns an iterator for all values                 |
-| `forEach()`       | Executes a function for each key-value pair        |
+| Method                | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| `append(name, value)` | Appends a new name-value pair                    |
+| `delete(name)`        | Deletes all pairs with the specified name        |
+| `get(name)`           | Returns the first value associated with the name |
+| `getAll(name)`        | Returns all values associated with the name      |
+| `has(name)`           | Returns boolean indicating if the name exists    |
+| `set(name, value)`    | Sets the value associated with the name          |
+| `sort()`              | Sorts all key-value pairs by their names         |
+| `entries()`           | Returns an iterator for all key-value pairs      |
+| `keys()`              | Returns an iterator for all keys                 |
+| `values()`            | Returns an iterator for all values               |
+| `forEach()`           | Executes a function for each key-value pair      |
 
 ## Best Practices
 

@@ -15,84 +15,86 @@ The HTTP and HTTPS modules are core to Node.js web development, allowing you to 
 ### Creating a Basic HTTP Server
 
 ```javascript
-import http from 'http';
+import http from "http";
 
 const server = http.createServer((req, res) => {
-  // Set status code and headers
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  
-  // Send response body
-  res.end(JSON.stringify({
-    message: 'Hello World',
-    path: req.url
-  }));
+    // Set status code and headers
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "application/json");
+
+    // Send response body
+    res.end(
+        JSON.stringify({
+            message: "Hello World",
+            path: req.url,
+        })
+    );
 });
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
 ```
 
 ### Request Object Properties
 
-| Property          | Description                                            |
-|-------------------|--------------------------------------------------------|
-| `req.method`      | The HTTP method (GET, POST, etc.)                      |
-| `req.url`         | The request URL                                        |
-| `req.headers`     | Object containing request headers                      |
-| `req.httpVersion` | HTTP version of the request                            |
+| Property          | Description                       |
+| ----------------- | --------------------------------- |
+| `req.method`      | The HTTP method (GET, POST, etc.) |
+| `req.url`         | The request URL                   |
+| `req.headers`     | Object containing request headers |
+| `req.httpVersion` | HTTP version of the request       |
 
 ### Response Object Methods
 
-| Method                             | Description                                     |
-|------------------------------------|-------------------------------------------------|
-| `res.writeHead(statusCode, headers)` | Write status code and multiple headers         |
-| `res.setHeader(name, value)`        | Set a single header                             |
-| `res.write(chunk)`                  | Write response data (can be called multiple times) |
-| `res.end([data])`                   | End the response, optionally sending final data |
+| Method                               | Description                                        |
+| ------------------------------------ | -------------------------------------------------- |
+| `res.writeHead(statusCode, headers)` | Write status code and multiple headers             |
+| `res.setHeader(name, value)`         | Set a single header                                |
+| `res.write(chunk)`                   | Write response data (can be called multiple times) |
+| `res.end([data])`                    | End the response, optionally sending final data    |
 
 ## HTTP Client
 
 ### Making HTTP Requests
 
 ```javascript
-import http from 'http';
+import http from "http";
 
 const options = {
-  hostname: 'api.example.com',
-  port: 80,
-  path: '/data',
-  method: 'GET',
-  headers: {
-    'Content-Type': 'application/json'
-  }
+    hostname: "api.example.com",
+    port: 80,
+    path: "/data",
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json",
+    },
 };
 
 const req = http.request(options, (res) => {
-  console.log(`Status Code: ${res.statusCode}`);
-  
-  let data = '';
-  
-  // Collect data chunks
-  res.on('data', (chunk) => {
-    data += chunk;
-  });
-  
-  // Process complete response
-  res.on('end', () => {
-    try {
-      const parsedData = JSON.parse(data);
-      console.log(parsedData);
-    } catch (e) {
-      console.error('Error parsing response:', e);
-    }
-  });
+    console.log(`Status Code: ${res.statusCode}`);
+
+    let data = "";
+
+    // Collect data chunks
+    res.on("data", (chunk) => {
+        data += chunk;
+    });
+
+    // Process complete response
+    res.on("end", () => {
+        try {
+            const parsedData = JSON.parse(data);
+            console.log(parsedData);
+        } catch (e) {
+            console.error("Error parsing response:", e);
+        }
+    });
 });
 
-req.on('error', (error) => {
-  console.error('Request error:', error);
+req.on("error", (error) => {
+    console.error("Request error:", error);
 });
 
 // For POST requests, write to the request body
@@ -104,20 +106,20 @@ req.end();
 ### Simplified GET Request
 
 ```javascript
-import http from 'http';
+import http from "http";
 
-http.get('http://api.example.com/data', (res) => {
-  let data = '';
-  
-  res.on('data', (chunk) => {
-    data += chunk;
-  });
-  
-  res.on('end', () => {
-    console.log(JSON.parse(data));
-  });
-}).on('error', (err) => {
-  console.error('Error: ', err.message);
+http.get("http://api.example.com/data", (res) => {
+    let data = "";
+
+    res.on("data", (chunk) => {
+        data += chunk;
+    });
+
+    res.on("end", () => {
+        console.log(JSON.parse(data));
+    });
+}).on("error", (err) => {
+    console.error("Error: ", err.message);
 });
 ```
 
@@ -128,51 +130,51 @@ The HTTPS module extends the HTTP module with TLS/SSL support.
 ### Creating an HTTPS Server
 
 ```javascript
-import https from 'https';
-import fs from 'fs';
+import https from "https";
+import fs from "fs";
 
 const options = {
-  key: fs.readFileSync('private-key.pem'),
-  cert: fs.readFileSync('certificate.pem')
+    key: fs.readFileSync("private-key.pem"),
+    cert: fs.readFileSync("certificate.pem"),
 };
 
 const server = https.createServer(options, (req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Secure Hello World!');
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/plain");
+    res.end("Secure Hello World!");
 });
 
 server.listen(443, () => {
-  console.log('HTTPS server running on port 443');
+    console.log("HTTPS server running on port 443");
 });
 ```
 
 ### Making HTTPS Requests
 
 ```javascript
-import https from 'https';
+import https from "https";
 
 const options = {
-  hostname: 'api.example.com',
-  port: 443,
-  path: '/secure-data',
-  method: 'GET'
+    hostname: "api.example.com",
+    port: 443,
+    path: "/secure-data",
+    method: "GET",
 };
 
 const req = https.request(options, (res) => {
-  let data = '';
-  
-  res.on('data', (chunk) => {
-    data += chunk;
-  });
-  
-  res.on('end', () => {
-    console.log(JSON.parse(data));
-  });
+    let data = "";
+
+    res.on("data", (chunk) => {
+        data += chunk;
+    });
+
+    res.on("end", () => {
+        console.log(JSON.parse(data));
+    });
 });
 
-req.on('error', (error) => {
-  console.error(error);
+req.on("error", (error) => {
+    console.error(error);
 });
 
 req.end();
@@ -180,17 +182,17 @@ req.end();
 
 ## Common HTTP Status Codes
 
-| Code | Message               | Description                              |
-|------|----------------------|------------------------------------------|
-| 200  | OK                   | Request succeeded                        |
-| 201  | Created              | Resource created successfully            |
-| 204  | No Content           | Success but no content to return         |
-| 400  | Bad Request          | Server couldn't understand the request   |
-| 401  | Unauthorized         | Authentication required                  |
-| 403  | Forbidden            | Server refuses to authorize              |
-| 404  | Not Found            | Resource not found                       |
-| 500  | Internal Server Error| Server encountered an error              |
-| 503  | Service Unavailable  | Server temporarily unavailable           |
+| Code | Message               | Description                            |
+| ---- | --------------------- | -------------------------------------- |
+| 200  | OK                    | Request succeeded                      |
+| 201  | Created               | Resource created successfully          |
+| 204  | No Content            | Success but no content to return       |
+| 400  | Bad Request           | Server couldn't understand the request |
+| 401  | Unauthorized          | Authentication required                |
+| 403  | Forbidden             | Server refuses to authorize            |
+| 404  | Not Found             | Resource not found                     |
+| 500  | Internal Server Error | Server encountered an error            |
+| 503  | Service Unavailable   | Server temporarily unavailable         |
 
 ## Best Practices
 

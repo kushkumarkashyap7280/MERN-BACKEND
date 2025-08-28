@@ -4,19 +4,19 @@ This directory contains detailed documentation on essential Node.js core modules
 
 ## Available Module Documentation
 
-| Module | Description | Documentation |
-|--------|-------------|---------------|
-| fs | File System operations | [FS Module](./fs.md) |
-| path | Path manipulation utilities | [Path Module](./path.md) |
-| url | URL parsing and formatting | [URL Module](./url.md) |
-| http/https | Web server and requests | [HTTP Module](./http.md) |
-| crypto | Cryptographic functionality | [Crypto Module](./crypto.md) |
-| stream | Streaming data handling | [Stream Module](./stream.md) |
-| events | Event-driven architecture | [Events Module](./events.md) |
-| child_process | Process spawning | [Child Process Module](./child_process.md) |
-| cluster | Multi-core server architecture | [Cluster Module](./cluster.md) |
-| worker_threads | Parallel JavaScript execution | [Worker Threads](./worker_threads.md) |
-| zlib | Compression utilities | [Zlib Module](./zlib.md) |
+| Module         | Description                    | Documentation                              |
+| -------------- | ------------------------------ | ------------------------------------------ |
+| fs             | File System operations         | [FS Module](./fs.md)                       |
+| path           | Path manipulation utilities    | [Path Module](./path.md)                   |
+| url            | URL parsing and formatting     | [URL Module](./url.md)                     |
+| http/https     | Web server and requests        | [HTTP Module](./http.md)                   |
+| crypto         | Cryptographic functionality    | [Crypto Module](./crypto.md)               |
+| stream         | Streaming data handling        | [Stream Module](./stream.md)               |
+| events         | Event-driven architecture      | [Events Module](./events.md)               |
+| child_process  | Process spawning               | [Child Process Module](./child_process.md) |
+| cluster        | Multi-core server architecture | [Cluster Module](./cluster.md)             |
+| worker_threads | Parallel JavaScript execution  | [Worker Threads](./worker_threads.md)      |
+| zlib           | Compression utilities          | [Zlib Module](./zlib.md)                   |
 
 ## Why These Modules Matter
 

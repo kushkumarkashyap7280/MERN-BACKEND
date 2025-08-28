@@ -85,21 +85,21 @@ console.log(normalizedPath); // outputs: /assets/images/profile.jpg
 
 The path module accounts for different path formats across operating systems:
 
-| Feature           | Windows               | POSIX (Unix, Linux, macOS) |
-|-------------------|----------------------|----------------------------|
-| Path separator    | Backslash (`\`)      | Forward slash (`/`)        |
-| Drive letter      | Yes (e.g., `C:\`)    | No                         |
-| Root directory    | `C:\` (drive-based)  | `/` (single root)          |
-| Path delimiter    | Semicolon (`;`)      | Colon (`:`)                |
-| Case sensitivity  | Case-insensitive     | Case-sensitive (typically) |
+| Feature          | Windows             | POSIX (Unix, Linux, macOS) |
+| ---------------- | ------------------- | -------------------------- |
+| Path separator   | Backslash (`\`)     | Forward slash (`/`)        |
+| Drive letter     | Yes (e.g., `C:\`)   | No                         |
+| Root directory   | `C:\` (drive-based) | `/` (single root)          |
+| Path delimiter   | Semicolon (`;`)     | Colon (`:`)                |
+| Case sensitivity | Case-insensitive    | Case-sensitive (typically) |
 
 ### Working with Windows Paths
 
 ```javascript
 // Windows-specific path handling
-import { win32 } from 'path';
+import { win32 } from "path";
 
-const windowsPath = win32.join('C:', 'Users', 'Username', 'Documents');
+const windowsPath = win32.join("C:", "Users", "Username", "Documents");
 console.log(windowsPath); // 'C:\Users\Username\Documents'
 ```
 
@@ -107,9 +107,9 @@ console.log(windowsPath); // 'C:\Users\Username\Documents'
 
 ```javascript
 // POSIX-specific path handling
-import { posix } from 'path';
+import { posix } from "path";
 
-const posixPath = posix.join('/home', 'username', 'documents');
+const posixPath = posix.join("/home", "username", "documents");
 console.log(posixPath); // '/home/username/documents'
 ```
 

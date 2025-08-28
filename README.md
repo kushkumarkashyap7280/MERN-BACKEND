@@ -110,6 +110,7 @@ If you're just starting out, check out these foundational repositories first:
    - Configure the necessary environment variables
 
 3. **Start Development Servers**:
+
    ```bash
    # In backend directory
    npm run dev
@@ -117,6 +118,7 @@ If you're just starting out, check out these foundational repositories first:
    # In frontend directory (new terminal)
    npm run dev
    ```
+
    </div>
 
 ### ⚡ Quick Setup
