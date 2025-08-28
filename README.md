@@ -1,4 +1,11 @@
-<div align="center">
+<div alig# MERN-BACKEND</h1>
+
+![MERN Stack](https://img.shields.io/badge/MERN-Stack-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)er">
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin: 20px 0;">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="120"/>
@@ -259,6 +266,10 @@ _⭐ Star the repositories if you find them helpful!_
 ---
 
 _Made with ❤️ by [Kush Kumar](https://github.com/kushkumarkashyap7280) | Follow the journey on [GitHub](https://github.com/kushkumarkashyap7280)_
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 </div>
 
