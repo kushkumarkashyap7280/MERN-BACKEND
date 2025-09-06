@@ -672,3 +672,41 @@ cd frontend && npm run dev
 - 📤 [Multer Documentation](https://github.com/expressjs/multer)
 - 🛡️ [File Upload Security Best Practices](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)
 </details>
+
+### 🎯 **Day 10: Advanced Authentication & Improved Error Handling**
+
+<details>
+<summary><strong>📖 What You'll Learn Today</strong></summary>
+
+#### 🌐 **Core Topics Covered:**
+
+- ✅ **Complete Authentication Flow** - Login, logout, and token refresh
+- ✅ **Advanced Error Handling** - Centralized error management with file cleanup
+- ✅ **Data Validation** - Flexible validation for create and update operations
+- ✅ **Standardized API Responses** - Consistent response formats
+- ✅ **Security Best Practices** - JWT handling, password security, and more
+
+#### 🛠️ **Hands-on Practice:**
+
+- 🔐 **JWT Authentication Flow** - Implementing full auth cycle
+- 🧹 **Automatic Resource Cleanup** - Managing temporary files
+- 🔄 **Token Refresh System** - Implementing secure token refresh
+- 🛡️ **Request Validation** - Validating user inputs with custom rules
+- 📋 **API Response Format** - Standardizing success and error responses
+
+#### 🎯 **Key Takeaways:**
+
+- Implement a complete authentication system with JWT
+- Create robust error handling for REST APIs
+- Build flexible data validation mechanisms
+- Design consistent API response formats
+- Apply security best practices throughout the application
+
+#### 📚 **Resources:**
+
+- 📖 [**Day 10 Complete Guide**](./day_010/README.md) - Detailed tutorial with examples
+- 🔐 [JWT Authentication](https://jwt.io/introduction)
+- 🛡️ [Express Error Handling](https://expressjs.com/en/guide/error-handling.html)
+- 📋 [API Design Best Practices](https://restfulapi.net/http-status-codes/)
+- 🔒 [Password Security Best Practices](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+</details>
